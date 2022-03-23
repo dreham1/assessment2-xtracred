@@ -1,0 +1,20 @@
+Google
+
+
+Google has a very open development environment with many different service APIs.
+Java, Javascript, C++, Python, Go, Sawzal (a custom logging language), and probably a few other languages are supported.
+Search is mostly based on C++ and some Python.
+Ads is a Java/SQL stack.
+Google Apps is a Javascript/Java/C++ stack.
+
+
+Facebook
+* Memcached is by now one of the most famous pieces of software on the internet. It’s a distributed memory caching system which Facebook (and a ton of other sites) use as a caching layer between the web servers and MySQL servers (since database access is relatively slow). Through the years, Facebook has made a ton of optimizations to Memcached and the surrounding software (like optimizing the network stack).
+Facebook runs thousands of Memcached servers with tens of terabytes of cached data at any one point in time. It is likely the world’s largest Memcached installation.
+* Haystack is Facebook’s high-performance photo storage/retrieval system (strictly speaking, Haystack is an object store, so it doesn’t necessarily have to store photos). It has a ton of work to do; there are more than 20 billion uploaded photos on Facebook, and each one is saved in four different resolutions, resulting in more than 80 billion photos.
+And it’s not just about being able to handle billions of photos; web performance is critical. As we mentioned previously, Facebook users upload around 147,000 photos every minute which makes it 2,450 photos per second.
+* React is an open-source JavaScript library created in 2011 by Jordan Walke, a software engineer at Facebook. Later, Facebook introduced React Fiber, which is a collection of algorithms for rendering graphics. Interestingly, React is now one of the world’s most widely used JavaScript libraries. Read the story of how React became so successful.
+
+
+FireFox
+The current generation of Firefox is built on the Gecko 1.9.1 rendering engine [source: Mozilla Developer Center]. A rendering engine is a program that interprets code and markup languages (such as HTML or XSL) and generates the image of the Web page you see in your Web browser. The Gecko 1.9.1 engine is faster than previous versions but it comes with a price. As Mozilla began to upgrade its engine, starting with Firefox 3 the browser isn't compatible with Windows 98 or earlier versions. It also won't work on versions of Mac OS X before version 10.3.
